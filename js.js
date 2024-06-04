@@ -34,7 +34,7 @@ if (email.indexOf('@') === -1) {
 }else if (email.indexOf('@') === email.length - 1) {
     // console.log(`not valid email <b>${email}</b> (символ @ знаходиться на останньому місці)`);
     email_mes += ` not valid email <b>${email}</b> (символ @ знаходиться на останньому місці);`;
-}if(!domailPart.includes('.')) {
+}else if(!domailPart.includes('.')) {
         // console.log(`not valid email <b>${email}</b> (після символу @ відсутня крапка або символи)`);
         email_mes += ` not valid email <b>${email}</b> (після символу @ відсутня крапка або символи);`;
 }else {
