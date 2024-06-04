@@ -39,10 +39,9 @@ if (email.indexOf('@') === -1) {
         email_mes += ` not valid email <b>${email}</b> (після символу @ відсутня крапка або символи);`;
 }else {
     // console.log(`valid email: ${email}`);
-    email += ` valid email: ${email}`;
+    email_mes += ` valid email`;
 }
 
-// document.write(email, email_mes);
 
 let birthYear;
 do {
