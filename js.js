@@ -6,7 +6,7 @@ let uppperName = name_items.map(name_item => {
 });
 
 user_name = uppperName.join(user_name.includes('-') ? '-' : ' ');
-console.log(user_name);
+// console.log(user_name);
 
 
 let user_surname= prompt("Введіть ваше прізвище");
@@ -17,7 +17,7 @@ let uppperSurname = surname_items.map(surname_item => {
 });
 
 user_surname = uppperSurname.join(user_surname.includes('-') ? '-' : ' ');
-console.log(user_surname);
+// console.log(user_surname);
 
 
 let email = prompt("Введіть свій email:");
@@ -39,7 +39,7 @@ if (email.indexOf('@') === -1) {
         email_mes += ` not valid email <b>${email}</b> (після символу @ відсутня крапка або символи);`;
 }else {
     // console.log(`valid email: ${email}`);
-    email_mes += ` valid email`;
+    email_mes += `${email} valid email`;
 }
 
 
@@ -53,6 +53,6 @@ let currentYear = new Date().getFullYear();
 let age = currentYear - birthYear;
 
 document.write(`<b>Full name:</b> ${user_name} ${user_surname}<br/>`);
-document.write(`<b>Email:</b> ${email, email_mes}<br/>`);
+document.write(`<b>Email:</b> ${email_mes}<br/>`);
 document.write(`<b>Age:</b> ${age}<br/>`);
 
